@@ -1,0 +1,35 @@
+class Calculadora():
+    """Se crea una clase llamada calculadora y se le piden al usuario valores de entrada
+    que seran los atributos de la clase"""
+
+    def __init__(self):
+        """se definen los atributos de la clase"""
+        self.valor1=int(input("Ingrese el valor 1:"))
+        self.valor2=int(input("Ingrese el valor 2:"))
+
+    def sumar(self):
+        """Se crea un metodo llamado sumar que permitira hacer la suma de los dos valores ingresados e 
+        imprimirlos"""
+        suma=self.valor1+self.valor2
+        print("La suma es: ",suma)
+
+    def restar(self): 
+        """metodo que permite restar los dos valores ingresados e imprimirlos"""
+        resta=self.valor1-self.valor2
+        print("La resta es: ",resta)
+
+    def multiplicar(self):
+        """metodo que permite multiplicar los dos valores ingresados e imprimirlos"""
+        mult=self.valor1*self.valor2
+        print("El producto es: ",mult)
+
+    def division(self):
+        """metodo que permite dividir los dos valores ingresados e imprimirlos"""
+        divi=self.valor1/self.valor2
+        print("La division es: ",divi)
+        
+operaciones=Calculadora() #se crea una instancia llamada operaciones
+operaciones.sumar() #se llama a la funcion sumar
+operaciones.restar() #se llama a la funcion restar 
+operaciones.multiplicar() #se llama a la funcion multiplicar
+operaciones.division() #se llama a la funcion dividir
